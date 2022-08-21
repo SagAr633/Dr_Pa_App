@@ -1,0 +1,22 @@
+{%extends 'main_base.html'%}
+{%block body_block%}
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4 mt-5">
+        <div class="alert"></div>
+        <form id="save-later-form">
+            <h3 class="mb-5">Write a Blog</h3>
+            <a href="{%url 'dr_dash'%}">Home</a>
+            {%csrf_token%}
+            {{form.as_p}}
+            <button type="submit" id="submit">SUBMIT</button>
+            <button type="submit" id="save">SAVE</button>
+        </form>
+    </div>
+    <div class="col-4"></div>
+</div>
+
+<script src="/Doctors/templates/form.js"></script>
+
+
+{%endblock%}

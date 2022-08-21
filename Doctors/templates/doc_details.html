@@ -1,0 +1,28 @@
+{%extends 'main_base.html'%}
+{%block body_block%}
+
+    <div class="row mt-3">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="{{request.user.pro_pic.url}}" class="card-img-top" alt="...">
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">First Name : {{request.user.first_name}}</li>
+                    <li class="list-group-item">Last Name : {{request.user.last_name}}</li>
+                    <li class="list-group-item">Username : {{request.user.username}}</li>
+                    <li class="list-group-item">Email : {{request.user.email}}</li>
+                    <li class="list-group-item">Address : {{request.user.address}}</li>
+                    <li class="list-group-item">Line 1 :{{request.user.line1}}</li>
+                    <li class="list-group-item">City : {{request.user.city}}</li>
+                    <li class="list-group-item">State : {{request.user.state}}</li>
+                    <li class="list-group-item">Zip Code : {{request.user.pin_code}}</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+
+{%endblock%}

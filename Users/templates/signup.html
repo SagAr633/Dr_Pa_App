@@ -1,0 +1,39 @@
+{%extends 'base.html'%}
+
+{%block body_block%}
+
+ <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6 mb-2">
+                    <h1>SignUp</h1>
+                </div>
+                <div class="col-3"></div>
+            </div>
+
+            <form action="" method="post" enctype="multipart/form-data">
+
+            {%csrf_token%}
+            {{form.as_p}}
+
+                 <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+
+                    <input type="submit" value="SignUp" class="btn-grad">
+
+                </div>
+                <div class="col-3"></div>
+            </div>
+
+
+            </form>
+            <br>
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+{%endblock%}

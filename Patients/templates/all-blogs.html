@@ -1,0 +1,20 @@
+{%extends 'main_base.html'%}
+{%block body_block%}
+
+<div class="row">
+
+
+    <div class="col-3"></div>
+    <div class="col-6 mt-5" style="text-align: center;">
+        <h1 style="color: white;" class="mb-4">Select a Topic</h1>
+
+        <a href="{%url 'mental'%}" class="btn-grad">Mental Health</a>
+        <a href="{%url 'heart'%}" class="btn-grad">Heart Disease</a>
+        <a href="{%url 'covid'%}" class="btn-grad">Covid19</a>
+        <a href="{%url 'immune'%}" class="btn-grad">Immunization</a>
+    </div>
+    <div class="col-6"></div>
+</div>
+</div>
+
+{%endblock%}

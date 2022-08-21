@@ -1,0 +1,51 @@
+body{
+
+    background-image: url(hero-bg.png);
+
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #00bf8f 0%, #001510  51%, #00bf8f  100%);
+    margin: 10px;
+    padding: 7px 30px;
+    text-align: center;
+    /* text-transform: uppercase; */
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    box-shadow: 0 0 10px #00bf8f;
+  }
+
+#navbar {
+    background-image: url(hero-bg.png);
+    color: white;
+    box-shadow: 0 0 5px white;
+}
+
+
+         .btn-grad1 {
+            background-image: linear-gradient(to right, #870000 0%, #190A05  51%, #870000  100%);
+            margin: 10px;
+            padding: 5px 15px;
+            text-align: center;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 5px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad1:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
