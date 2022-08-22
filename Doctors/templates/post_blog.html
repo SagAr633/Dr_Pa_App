@@ -1,20 +1,54 @@
 {%extends 'main_base.html'%}
 {%block body_block%}
-<div class="row">
+
+<div class="row" >
     <div class="col-4"></div>
-    <div class="col-4 mt-5">
-        <div class="alert"></div>
-        <form id="save-later-form">
-            <h3 class="mb-5">Write a Blog</h3>
-            <a href="{%url 'dr_dash'%}">Home</a>
-            {%csrf_token%}
-            {{form.as_p}}
-            <button type="submit" id="submit">SUBMIT</button>
-            <button type="submit" id="save">SAVE</button>
-        </form>
+    <div class="col-4 mt-5" >
+        <div class="card" style="width: 100%;" id="add-blog-form">
+            <div class="card-header" style="text-align: center;">
+                <h3><b>Add Blog</b></h3>
+            </div>
+            <form class="mt-3 ps-2" id="save-later-form" method="post" enctype="multipart/form-data">
+                {%csrf_token%}
+                {{form.as_p}}
+
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <button type="submit" class="btn-grad-post" id="submit">POST</button>
+                        <button type="submit" class="btn-grad-save" id="save">SAVE</button>
+                    </div>
+                    <br><br>
+                    <div class="col-4"></div>
+                </div>
+
+            </form>
+        </div>
     </div>
     <div class="col-4"></div>
 </div>
+
+
+<!--<li class="list-group-item">An item</li>-->
+<!--<li class="list-group-item">A second item</li>-->
+<!--<li class="list-group-item">A third item</li>-->
+
+
+<!--<div class="row">-->
+<!--    <div class="col-4"></div>-->
+<!--    <div class="col-4 mt-5">-->
+<!--        <div class="alert"></div>-->
+<!--        <form id="save-later-form">-->
+<!--            <h3 class="mb-5">Write a Blog</h3>-->
+
+<!--            {%csrf_token%}-->
+<!--            {{form.as_p}}-->
+<!--            <button type="submit" id="submit">SUBMIT</button>-->
+<!--            <button type="submit" id="save">SAVE</button>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--    <div class="col-4"></div>-->
+<!--</div>-->
 
 <script src="/Doctors/templates/form.js"></script>
 

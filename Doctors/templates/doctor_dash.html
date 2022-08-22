@@ -1,45 +1,16 @@
-
 {%extends 'main_base.html'%}
 {%block body_block%}
-    <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6 mt-3" id="doc_welcome">
-            <h1>Welcome Doctor {{request.user}}</h1>
-            <a href="{%url 'post_blog'%}">Write</a>
-            <a href="{%url 'user_blogs'%}">My Blogs</a>
-        </div>
-        <div class="col-3 mt-4">
-            <form action="">
-                <a href="{%url 'signout'%}" class="btn btn-danger">logout</a>
-            </form>
-        </div>
+
+
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6 mt-5" id="doc_welcome">
+        <h1 style="color: white; text-align: center;">Welcome Doctor {{request.user}}</h1>
     </div>
+    <div class="col-3 mt-4"></div>
 
-
-        <div class="row" >
-            <div class="col-4"></div>
-            <div class="col-4 mt-3" >
-                <div class="card" style="width: 18rem;">
-                    <img src="{{request.user.pro_pic.url}}" class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">First Name : {{request.user.first_name}}</li>
-                        <li class="list-group-item">Last Name : {{request.user.last_name}}</li>
-                        <li class="list-group-item">Username : {{request.user.username}}</li>
-                        <li class="list-group-item">Email : {{request.user.email}}</li>
-                        <li class="list-group-item">Address : {{request.user.address}}</li>
-                        <li class="list-group-item">Line 1 :{{request.user.line1}}</li>
-                        <li class="list-group-item">City : {{request.user.city}}</li>
-                        <li class="list-group-item">State : {{request.user.state}}</li>
-                        <li class="list-group-item">Zip Code : {{request.user.pin_code}}</li>
-                    </ul>
-
-                </div>
-            </div>
-            <div class="col-4"></div>
-        </div>
-
-
+    <div class="col-4"></div>
+</div>
 
 
 {%endblock%}

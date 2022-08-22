@@ -4,6 +4,73 @@ body{
 
 }
 
+#user_dp {
+  border-radius: 50%;
+  box-shadow: 0 0 5px white;
+}
+#user_dp:hover {
+  box-shadow: 0 0 5px #7cc576;
+}
+
+#navbar {
+  background-image: url(hero-bg.png);
+  color: white;
+  box-shadow: 0 0 5px white;
+}
+#navbar:hover {
+  box-shadow: 0 0 10px #7cc576;
+  /* color: #7cc576; */
+}
+
+#add-blog-form {
+  border-radius: 15px;
+} 
+
+/* /* .navbar.container-fluid.collapse.navbar-nav.nav-item.nav-link */
+#nav0 {
+  color: white;
+}
+#nav0 :hover {
+  color: #7cc576;
+}
+#nav1 { 
+  color: white;
+}
+#nav1 :hover {
+  color: #7cc576;
+}
+#nav2 { 
+  color: white;
+}
+#nav2 :hover {
+  color: #7cc576;
+}
+#nav3 { 
+  color: white;
+}
+#nav3 :hover {
+  color: #7cc576;
+}
+#nav4 { 
+  color: white;
+}
+#nav4 :hover {
+  color: #7cc576;
+}
+#nav5 { 
+  color: white;
+}
+#nav5 :hover {
+  color: #7cc576;
+}
+#nav6 { 
+  color: white;
+}
+#nav6 :hover {
+  color: #7cc576;
+}
+
+
 .btn-grad {
     background-image: linear-gradient(to right, #00bf8f 0%, #001510  51%, #00bf8f  100%);
     margin: 10px;
@@ -15,6 +82,7 @@ body{
     color: white;            
     border-radius: 10px;
     display: block;
+    text-decoration: none;
   }
   
   .btn-grad:hover {
@@ -24,14 +92,9 @@ body{
     box-shadow: 0 0 10px #00bf8f;
   }
 
-#navbar {
-    background-image: url(hero-bg.png);
-    color: white;
-    box-shadow: 0 0 5px white;
-}
 
 
-         .btn-grad1 {
+ .btn-grad1 {
             background-image: linear-gradient(to right, #870000 0%, #190A05  51%, #870000  100%);
             margin: 10px;
             padding: 5px 15px;
@@ -39,13 +102,63 @@ body{
             transition: 0.5s;
             background-size: 200% auto;
             color: white;
-            box-shadow: 0 0 5px #eee;
+            box-shadow: 0 0 5px #870000;
             border-radius: 10px;
             display: block;
-          }
-
-          .btn-grad1:hover {
-            background-position: right center; /* change the direction of the change here */
-            color: #fff;
             text-decoration: none;
           }
+
+.btn-grad1:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #870000;
+            text-decoration: none;
+          }
+
+#logout-btn {
+  text-decoration: none;
+}
+
+
+         
+.btn-grad-save {
+  background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
+  margin: 10px;
+  padding: 5px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(0, 0, 0);            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.btn-grad-save:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+         
+.btn-grad-post {
+  background-image: linear-gradient(to right, #00bf8f 0%, #001510  51%, #00bf8f  100%);
+  margin: 10px;
+  padding: 5px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(0, 0, 0);            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.btn-grad-post:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}

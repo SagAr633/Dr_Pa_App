@@ -1,27 +1,26 @@
 
-<html lang="en">
 {%extends 'main_base.html'%}
 {%block body_block%}
-    <div class="row">
+    <div class="row" >
         <div class="col-2"></div>
         <div class="col-8">
-            <a href="{%url 'dr_dash'%}">Home</a>
+            <h1 style="color: white; text-align: center;" class="mt-3 mb-5">Blogs of {{request.user}}</h1>
             {%for blog in blogs%}
 
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 100%;">
+                <h3 style="text-align: center;" >Topic : <b>{{blog.category}}</b></h3>
                 <img src="{{blog.image.url}}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">{{blog.title}}</h5>
+                    <h4 class="card-title">Title : <b>{{blog.title}}</b></h4>
+
+                    <p><b>Summary</b> : {{blog.summary}}</p>
+                    <p><b>Content</b> : {{blog.content}} </p>
 
                 </div>
-                <ul class="list-group list-group-flush">
 
-                    <li class="list-group-item"> {{blog.summary}} <li>
-                    <li class="list-group-item"> {{blog.content}} <li>
-
-                </ul>
 
             </div>
+            <br><br><br>
             {%endfor%}
         </div>
 

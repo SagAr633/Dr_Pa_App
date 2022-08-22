@@ -5,4 +5,11 @@ from Doctors.models import DoctorBlog
 class DoctorBlogForm(forms.ModelForm):
     class Meta:
         model = DoctorBlog
-        exclude = ('__all__',)
+        fields = [
+            'author',
+            'category',
+            'title',
+            'image',
+            'summary',
+            'content'
+        ]

@@ -1,5 +1,6 @@
 from django.db import models
 from Users.models import User
+from django.urls import reverse
 
 
 class DoctorBlog(models.Model):
@@ -15,5 +16,12 @@ class DoctorBlog(models.Model):
     image = models.ImageField(upload_to='blog_images')
     summary = models.CharField(max_length=500, null=False, blank=False)
     content = models.CharField(max_length=3000, null=False, blank=False)
+
+    def __str__(self):
+        return self.title
+
+    # def get_absolute_url(self):
+    #     return reverse('user_blogs')
+
 
 

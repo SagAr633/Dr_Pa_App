@@ -8,10 +8,11 @@
         {%if blog.category == 'Covid19'%}
 
         <div class="card" style="width: 100%;">
-            <h5 class="card-title">Title : {{blog.title}}</h5>
+            <h3 class="card-title" style="text-align: center;">Title : <b>{{blog.title}}</b></h3>
             <img src="{{blog.image.url}}" class="card-img-top" alt="...">
-            <p id="truncateMe"><i>Summary : </i>{{blog.summary}}</p>
-            <p>Content : {{blog.content}}</p>
+            <p id="truncateMe"><b>Summary</b> : {{blog.summary}}</p>
+            <p><b>Content</b> : {{blog.content}}
+            <p><b>Posted by</b> : {{blog.author}}</p>
         </div>
         <br><br><br>
         {%endif%}
